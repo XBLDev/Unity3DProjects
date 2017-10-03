@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Initialize : MonoBehaviour {
 
-    string baseURLPath = "https://ie.csiro.au/services/p3d-legacy/models/";
+    string baseURLPath = "https://someurl/services/p3d-legacy/models/";
     string posEndURL = "/geometry/position";
     string normalEndURL = "/geometry/normal";
     string uvEndURL = "/geometry/uv";
@@ -31,7 +31,7 @@ public class Initialize : MonoBehaviour {
     List<string> idlist;
     List<string[]> urls;
 
-    string modelUrl = "https://ie.csiro.au/services/p3d-legacy/models/";
+    string modelUrl = "https://someurl/services/p3d-legacy/models/";
     public InputField nameField;
 
     // Use this for initialization

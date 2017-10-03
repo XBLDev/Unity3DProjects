@@ -22,11 +22,11 @@ public class testConnect : MonoBehaviour
     //public Text textBoard;
 
 
-    private string urlPosition = "https://ie.csiro.au/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/geometry/position";
-    private string urlNormal = "https://ie.csiro.au/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/geometry/normal";
-    private string urlUV = "https://ie.csiro.au/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/geometry/uv";
-    private string urlHi = "https://ie.csiro.au/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/texture/hi";
-    private string urlAnnotations = "https://ie.csiro.au/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/annotations​";
+    private string urlPosition = "https://someURL/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/geometry/position";
+    private string urlNormal = "https://someURL/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/geometry/normal";
+    private string urlUV = "https://someURL/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/geometry/uv";
+    private string urlHi = "https://someURL/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/texture/hi";
+    private string urlAnnotations = "https://someURL/services/p3d-legacy/models/2bhqPqmKn8LEjTJY2/annotations​";
 
     private string currentUrlPosition;
     private string currentUrlNormal;
