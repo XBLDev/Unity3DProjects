@@ -1,0 +1,56 @@
+1. Compile server code
+
+Compile the server/Hololens project with the code in HoloToolkit-Unity-master, run it 
+on Hololens to build the server.
+
+2. Switch from Windows Store build to Android build
+
+Disable: HoloLensCamera, Managers, AnchorManager, and HologramCollection in the 
+scene;
+
+Delete folder HoloToolkit from Assets;
+
+Delete GenericNetworkTransmitter.cs, SharedAnchorDebugText.cs, SharedCollection.cs,
+and UNetAnchorManager.cs from HoloToolkit-Examples/SharingWithUNet/Scripts;
+
+Download the latest Tango Unity SDK from: https://developers.google.com/tango/downloads;
+
+Drag the SDK package to Assets to import it;
+
+Ctrl+Shift+B -> Android -> Switch Platform;
+
+Enable: Tango Manager, Tango Camera in the scene;
+
+For Tango Manager, set: Auto-connect to Service, Enable Motion Tracking with Auto Rest, Enable
+Video Overlay with Method = Texture and Raw Bytes;
+
+For Tango Camera, enable AR Screen;
+
+If Unity gives any error now, save, quit Unity, and start Unity again. The error should be gone 
+after that;
+
+Start the server Hololens first, then compile the project onto Tango. If everything goes well 
+the Tango phone should work as a controller for Hololens.
+
+3. Switch from Android build to Windows Store build
+
+Disable Tango Manager, Tango Camera;
+
+In Assets, delete everything that's not HoloToolkit-Examples;
+
+From Backupcode, copy HoloToolkit to HoloToolkit-Unity-master/Assets, wait until Unity loads all 
+the code;
+
+From Backupcode, copy all 4 .cs files to HoloToolkit-Unity-master/Assets/HoloToolkit-Examples/
+SharingWithUNet/Scripts;
+
+Ctrl+Shift+B -> Windows Store -> Switch Platform;
+
+Enable: HoloLensCamera, Managers, AnchorManager, and HologramCollection in the scene;
+
+Drag: SharedCollection.cs to HologramCollection, SharedAnchorDebugText.cs to Shared Anchor Pos Text,
+UNetAnchorManager.cs to AnchorManager, GenericNetworkTransmitter.cs to Managers;
+
+Drag: UNETSharingStage to Network Discovery Object of Shared Anchor Debug Text;
+
+Compile windows store again.

@@ -1,0 +1,18 @@
+20/09/2017:
+
+Once Hololens and Tango are connected, to reset the Controller, put the Tango phone
+to the little white box in the Hololens view as close as possible, and double tap 
+on Tango Phone when the position and rotation of Tango phone is pretty much the same 
+as the white box. A yellow box will appear in the view, with the same position and 
+rotation as the white box, and the position and rotation of the yellow box will follow 
+the tango phone.
+
+If later the user wants to reset the phone in the view, rotate/move the Hololens till
+the white box is in a good position, and repeat the steps above.
+
+19/09/2017:
+
+I'll upload the Hololens+Tango Unity project here, and there will be a mannual 
+of how to compile the project such that it works on both Tango and Hololens, and
+some problems I encountered during the development.
+
